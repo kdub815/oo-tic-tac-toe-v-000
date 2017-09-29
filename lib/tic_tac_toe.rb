@@ -97,14 +97,14 @@ class TicTacToe
   end
 
   def play
- until over?
-   turn
- end
- if over? && draw? #if over and full but no winner
-   puts "Cat's Game!"
- elsif over? && winner #if over and full with winner
-   puts "Congratulations #{winner}!"
- end
-end
+    until over?
+      turn
+    end
+    if over? && draw? #if over and full but no winner
+      puts "Cat's Game!"
+    elsif over? && winner #if over and full with winner
+      puts "Congratulations #{winner}!"
+    end
+  end
 
 end
