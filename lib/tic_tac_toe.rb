@@ -74,15 +74,17 @@ class TicTacToe
   end
 
   def draw?
-    if !won? && full? #true if -- board has not been won and is full
-    elsif won? && full? #false if -- board is won and is full
+    if !won? && full?
+      return true #true if -- board has not been won and is full
+    elsif won? && full?
+      return false #false if -- board is won and is full
+    else false #false if -- board has not been won and is NOT full (in progress game)
     end
   end
 
-  def over?(board)
-    if won?(board) || full?(board) || draw?(board)
-      return true
-    else false
+  def over?
+    if won? || full? || draw?
     end
   end
+  
 end
