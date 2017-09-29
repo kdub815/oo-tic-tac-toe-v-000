@@ -60,4 +60,11 @@ class TicTacToe
     end
   end
 
+  def won?
+  WIN_COMBINATIONS.detect do |win_combo|
+    win_combo.all? {|index| @board[index] == "X"} ||
+    win_combo.all? {|index| @board[index] == "O"}
+  end
+  end
+
 end
