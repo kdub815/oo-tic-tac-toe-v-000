@@ -86,5 +86,5 @@ class TicTacToe
     if won? || full? || draw?
     end
   end
-  
+
 end
